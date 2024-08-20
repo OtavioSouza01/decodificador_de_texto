@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+            <img src="./assets/logotipo.png" alt="logotipo da alura" class="cabecalho_logotipo">
+    </header>
+    <main>
+        <section class="conteudo">
+            <div class="conteudo_area">
+                <textarea class="conteudo_area_texto" name="texto" id="texto" placeholder="Digite sua mensagem..."></textarea>
+                <p>Apenas letras minúsculas e sem acentos.</p>
+                <div class="conteudo_area_botao">
+                    <button onclick="criptografarTexto()" class="botao">
+                        Criptografar
+                    </button>
+                    <button onclick="descriptografarTexto()" class="botao">
+                        Descriptografar
+                    </button>
+                </div>
+            </div>
+            <div class="conteudo_resultado" id="conteudo_resultado">
+                <div>
+                    <img class="image" src="./assets/image.png" alt="">
+                </div>
+                <div>
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+            </div>
+            <div class="conteudo_resultado2" id="conteudo_resultado2">
+                <textarea class="conteudo_resultado2_texto" name="textoResultado" id="conteudo_resultado2_texto"></textarea>
+                <button onclick="copiar()" class="botao" id="copiar">Copiar Texto</button>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="rodape_dev">Desenvolvido por Otávio Souza.</p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
